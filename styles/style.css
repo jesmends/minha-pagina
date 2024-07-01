@@ -1,0 +1,170 @@
+* {
+    /* tamanho de uma folha a4 */
+    max-width: 595px;
+    max-width:842px;
+
+    /* redefinir formatação */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    /* tirar a decoração dos links e deixar preto */
+    text-decoration: none;
+    color: #000000
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.material-symbols-outlined {
+    display: none;
+    
+    position: fixed;
+    /* posso usar % e REM juntos? Não sei. */
+    width: 100%;
+    height: 2rem;
+    padding: 3% 0 0 4%;
+    background-color: #fff;
+} 
+
+.menu-inicial {
+    /* para fazer o menu fixar */
+    position: fixed;
+    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    background-color: #fff;
+    padding: 10px 0;
+    height: 3rem;
+    width: 100%;
+}
+
+.contato {
+    /* para não ser coberto pelo menu fixado */
+    margin-top: 30px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contato-foto {
+    width: 200px;
+    padding: 30px 0 0 70px;
+}
+
+#dados-pessoais {
+    padding: 20px 0;
+        
+    display: flex;
+    flex-direction: column;
+}
+
+.nome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* links de Linkedin e Github */
+.links {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Telefone e e-mail */
+.comunicacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* main */
+.informacoes {
+    padding: 0 0 0 6.25rem;
+}
+
+.informacoes h4 {
+    /* faz os títulos ficarem -presos- no topo da página */
+    position: sticky;
+    top: 2rem;
+    position: 0px;
+}
+
+/* Essa informação cobre no final, como arrumar? */
+/* .informacoes h4:nth-child(3){
+    top: 3rem;
+} */
+
+/* cada uma section das informações */
+.item{
+    padding: 10px 0;
+}
+
+h4 {
+    padding:10px;
+}
+
+strong {
+    font-weight: normal;
+    color: #444449;
+}
+
+h3 {
+    padding: 10px;
+    font-weight: normal;
+}
+
+#curso-certificado {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (max-width: 720px) {
+    .material-symbols-outlined {
+        display: flex;
+        height: 8rem;
+    } 
+
+    .menu-inicial{
+        display: none;
+
+        margin-top: 2px;
+        display: flex;
+        flex-direction: column; 
+        
+        /* padding: 0 3rem;
+        justify-content: space-evenly; */
+        margin-left: 70px;
+        gap: 2px;
+        height: 8rem;
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .contato {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contato-foto {
+        padding: 30px 0;
+    }
+
+    .informacoes {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 1rem;   
+    }
+
+    .informacoes h4 {
+        background-color: #fff;
+    }
+}
