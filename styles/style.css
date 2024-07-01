@@ -130,7 +130,7 @@ h3 {
 @media (max-width: 720px) {
     .material-symbols-outlined {
         display: flex;
-        height: 8rem;
+        /* height: 8rem; */
     } 
 
     .menu-inicial{

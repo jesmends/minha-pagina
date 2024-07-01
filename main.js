@@ -116,6 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let itens = document.querySelector('#itens');
     let menuLinks = itens.querySelectorAll('a');
 
+    // itens.style.display = 'none';
+
     icone.addEventListener('click', () => {
         if (itens.style.display == 'flex') {
                 itens.style.display = 'none';
@@ -124,11 +126,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         });
 
-    Array.from(menuLinks).forEach(function(link) {
+    menuLinks.forEach(function(link) {
         link.addEventListener('click', () => {
             itens.style.display = 'none';
         });
     });
     
 });
+
 
