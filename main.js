@@ -116,8 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let itens = document.querySelector('#itens');
     let menuLinks = itens.querySelectorAll('a');
 
-    // itens.style.display = 'none';
-
     icone.addEventListener('click', () => {
         if (itens.style.display == 'flex') {
                 itens.style.display = 'none';

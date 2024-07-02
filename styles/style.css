@@ -28,6 +28,7 @@ a {
     height: 2rem;
     padding: 3% 0 0 4%;
     background-color: #fff;
+    justify-content: center;
 } 
 
 .menu-inicial {
@@ -94,7 +95,6 @@ a {
     /* faz os títulos ficarem -presos- no topo da página */
     position: sticky;
     top: 2rem;
-    position: 0px;
 }
 
 /* Essa informação cobre no final, como arrumar? */
@@ -128,25 +128,36 @@ h3 {
 }
 
 @media (max-width: 720px) {
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+    }
+
     .material-symbols-outlined {
         display: flex;
         /* height: 8rem; */
     } 
 
+    #itens {
+        display: none;
+    }
+
     .menu-inicial{
         display: none;
 
-        margin-top: 2px;
+        margin-top: 35px;
         display: flex;
         flex-direction: column; 
+        align-items: center;
         
         /* padding: 0 3rem;
-        justify-content: space-evenly; */
-        margin-left: 70px;
+         */
+        /* margin-left: 70px; */
         gap: 2px;
-        height: 8rem;
+        height: 8.5rem;
         font-size: 15px;
-        width: 100%;
+        width: 100vh;
+        padding: 10px 10px 0 2px;
     }
 
     .contato {
